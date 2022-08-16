@@ -7,7 +7,7 @@ const numbers = [1, 3, 5, 6, 8, 10, 15, 20, -6, -8];
 let diffArray = [];
 let taskResult = -1
 
-for (i = 0; i < numbers.length; i += 1) {
+for (i = 0; i < numbers.length; i += 2) {
     let diffNumb = Math.abs(numbers[i + 1] - numbers[i]);
     if (diffNumb > taskResult) {
       diffArray.push(diffNumb);

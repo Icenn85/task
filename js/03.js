@@ -8,19 +8,23 @@ let firstFiveZeroFirst = [];
 
 for (let i = 0; i < numbers.length; i += 1) {
   if (numbers[i] === 0) {
-    firstFiveZeroFirst.push(numbers[i]);
-  } else if (firstFiveZeroFirst.length === 5) {
+    firstFiveZeroFirst.push(i);
+  }
+  if (firstFiveZeroFirst.length === 5) {
     break;
   }
-
 }
 
 console.log(firstFiveZeroFirst);
 
 /* second way*/
 
-const allZeroSecond = numbers.filter((number) => number === 0);
+allZeroSecond = numbers.reduce((acc, number, index) => {
+  if (number === 0) {
+    acc.push(index);
+  }
+  return acc;
+}, []);
 
 const firstFiveZeroSecond = allZeroSecond.slice(0, 5)
-
 console.log(firstFiveZeroSecond);
