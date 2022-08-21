@@ -1,0 +1,22 @@
+.container {
+    width: 500px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 20%;
+     border: 2px solid black;
+}
+
+.btn {
+    margin-top: 30px;
+     margin-left: 30px;
+     margin-bottom: 30px;
+}
+
+.form__value {
+    margin-left: 50px;
+}
+
+.form__result {
+    margin-top: 30px;
+    margin-left: 160px;
+}
