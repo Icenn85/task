@@ -16,19 +16,19 @@ btn.addEventListener("click", () => {
   // const checkedBtn = selectedAnimal.toString();
 
     switch (selectedAnimal) {
-      case "Dog":
+      case "dog":
         alert("Dog");
         break;
-      case "Cat":
+      case "cat":
         alert("Cat");
         break;
-      case "Racoon":
+      case "racoon":
         alert("Racoon");
         break;
-      case "Lizard":
+      case "lizard":
         alert("Lizard");
         break;
-      case "Snake":
+      case "snake":
         alert("Snake");
         break;
       default:
