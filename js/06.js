@@ -7,13 +7,10 @@ btn.addEventListener("click", () => {
   let selectedAnimal;
   for (const radioButton of radioButtons) {
     if (radioButton.checked) {
-                    selectedAnimal = radioButton.value;
+      selectedAnimal = radioButton.value;
       break;
     }
   }
-  console.log(selectedAnimal);
-  
-  // const checkedBtn = selectedAnimal.toString();
 
     switch (selectedAnimal) {
       case "dog":
