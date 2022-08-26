@@ -1,3 +1,5 @@
+// 1. When user press test, show value in alert
+
 const btn = document.querySelector(".form__btn");
 const radioButtons = document.querySelectorAll("input");
 
