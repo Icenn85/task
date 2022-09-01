@@ -11,10 +11,10 @@ const btnSec = document.getElementById("221");
 const btnThird = document.getElementById("333");
 const btnForth = document.getElementById("777");
 const btnFif = document.getElementById("919");
-const date = new Date().getTime();
 
 
-console.log(date);
+
+
 
 btnFirst.addEventListener("click", () => onCompare("137"));
 btnSec.addEventListener("click", () => onCompare("221"));
@@ -24,6 +24,8 @@ btnFif.addEventListener("click", () => onCompare("919"));
 
 
 function onCompare(oper) {
+    const date = new Date().getTime();
+    console.log(date);
   switch (date % oper === 0) {
     case true:
       console.log("Yes you are lucky");

@@ -1,4 +1,4 @@
-// 2. Pressing on a button executes operation +, - ,* or / 
+// 2. Pressing on a button executes operation +, - ,* or /
 // Operation result show in Result input
 
 const btnAdd = document.getElementById("add");
@@ -17,25 +17,32 @@ let result = document.querySelector(".form__result");
 // console.log(btnMult);
 // console.log(btnDiv);
 
+function getInputValue() {
+  const value1 = Number(inputFirst.value);
+  const value2 = Number(inputSec.value);
+  return [value1, value2];
+}
 
-btnAdd.addEventListener("click",() => onColculate("add"));
+btnAdd.addEventListener("click", () => onColculate("add"));
 btnSub.addEventListener("click", () => onColculate("sub"));
 btnMult.addEventListener("click", () => onColculate("mult"));
 btnDiv.addEventListener("click", () => onColculate("div"));
 
 function onColculate(oper) {
+  const values = getInputValue();
   switch (oper) {
     case "add":
-      result.value = Number(inputFirst.value) + Number(inputSec.value);
+      result.value = values[0] + values[1];
       break;
     case "sub":
-      result.value = Number(inputFirst.value) - Number(inputSec.value);
+      result.value = values[0] - values[1];
       break;
     case "mult":
-      result.value = Number(inputFirst.value) * Number(inputSec.value);
+      result.value = values[0] * values[1];
       break;
     case "div":
-      result.value = Number(inputFirst.value) / Number(inputSec.value);
+      result.value = values[0] / values[1];
       break;
   }
 }
+
